@@ -7,16 +7,12 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///form.db'
 db = SQLAlchemy(app)
 app.config.update(
-    MAIL_SERVER = os.getenv("MAIL_SERVER"),
-    MAIL_PORT = int(os.getenv("MAIL_PORT")),
-    MAIL_USE_TLS = False,
-    MAIL_USE_SSL = True,
-    MAIL_USERNAME = os.getenv("MAIL_USERNAME"),
-    MAIL_PASSWORD = os.getenv("MAIL_PASSWORD")
-<<<<<<< HEAD
-
-=======
->>>>>>> cd676af350e0fc2fa5660041236eee28d959aacc
+    MAIL_SERVER=os.getenv("MAIL_SERVER"),
+    MAIL_PORT=int(os.getenv("MAIL_PORT")),
+    MAIL_USE_TLS=False,
+    MAIL_USE_SSL=True,
+    MAIL_USERNAME=os.getenv("MAIL_USERNAME"),
+    MAIL_PASSWORD=os.getenv("MAIL_PASSWORD")
 )
 mail = Mail(app)
 class Form(db.Model):
