@@ -7,12 +7,12 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///form.db'
 db = SQLAlchemy(app)
 app.config.update(
-    MAIL_SERVER = 'smtp.gmail.com',
-    MAIL_PORT = 465,
+    MAIL_SERVER = os.getenv("MAIL_SERVER"),
+    MAIL_PORT = int(os.getenv("MAIL_PORT")),
     MAIL_USE_TLS = False,
     MAIL_USE_SSL = True,
-    MAIL_USERNAME = 'damanpreetsingh1979@gmail.com',
-    MAIL_PASSWORD = 'xrop aoda ftnt vtam'
+    MAIL_USERNAME = os.getenv("MAIL_USERNAME"),
+    MAIL_PASSWORD = os.getenv("MAIL_PASSWORD")
 )
 mail = Mail(app)
 class Form(db.Model):
@@ -25,7 +25,7 @@ class Form(db.Model):
 
 @app.route('/')
 def home():
-    newsapi = NewsApiClient(api_key="71d45e0dd94e4b2e9e14cb6351b7bf24")
+    newsapi = NewsApiClient(api_key=os.getenv("NEWS_API_KEY"))
     topheadlines = newsapi.get_top_headlines(sources="bbc-news")
  
  
