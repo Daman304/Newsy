@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daman">
+    <meta name="description" content="This is a news website it will provide you with the latest news happening in ur area.">
+    <meta name="keywords" content="news, News, Latest News, USA news">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+rel="stylesheet">
+    <title>About</title>
+</head>
+<style>
+  .super{
+    border: 1px solid black;
+    border-left-color: rgb(55, 231, 12);
+    border-left-width: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 90px;
+    color: coral;
+  }
+  .stream{
+    margin-top: 70px;
+  }
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+.center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main{
+height: 100vh;
+}
+.box{
+width: 250px;
+height: 250px;
+box-shadow: 10px 20px rgba(0, 0, 0, 0.288);
+border-radius: 23px;
+flex-direction: column;
+color: white;
+position: relative;
+overflow: hidden;
+margin-top: -300px;
+}
+.box img{
+width: 100px;
+height: 100px;
+border-radius: 50px;
+}
+.user_name{
+            margin-bottom: 5px;
+            font-size: 2rem;
+}
+.skill{
+color: rgba(255, 255, 255, 0.555);
+}
+/* arrow */
+.arr_container, .cancel{
+position: absolute;
+width: 50px;
+height: 50px;
+background: white;
+bottom: 0;
+right: 0;
+border-radius: 23px 0 23px 0;
+color: rgb(70, 70, 70);
+font-size: 1.6rem;
+cursor: pointer;
+transition: all .45;
+}
+.arr_container i{
+transform: rotate(45deg);
+}
+.active_arr{
+transform: translate( 80%, 80%);
+}
+.left_container{
+position: absolute;
+background: #0f2027;
+width: 100%;
+height: 100%;
+border-radius: 23px;
+padding: 40px 0 0 20px;
+transition: all .4s;
+}
+.off{
+transform: translate(-80%, -80%) rotate( 90deg);
+}
+.active{
+transform: translate() rotate(0);
+}
+.left_container p{
+margin-bottom: 15px;
+font-size: 1.2rem;
+}
+.left_container .skills div{
+display: inline-block;
+color: rgb(155, 155, 155);
+border: 1px solid rgb(155, 155, 155);
+padding: 5px 10px;
+font-size: .9rem;
+margin: 4px 4px 4px 0;
+}
+.left_container .icons{
+font-size: 1.6rem;
+margin-top: 10px;
+}
+.left_container .icons i{
+color: #cfcfcf;
+cursor: pointer;
+margin-right: 10px;
+transition: all .4s;
+}
+.left_container .icons i:hover{
+color: #2c5364;
+}
+/* .icons{
+margin-top: 2.3em;
+display: flex;
+} */
+/* a:hover {
+cursor: pointer;
+}
+.icons i{
+display: grid;
+place-items: center;
+opacity: 0.7;
+margin-left: 1.3em;
+font-size: 1.8em;
+transition: 0.2s;
+padding: 0.65en;
+border-radius: 50%;
+background: #04DBE8;
+box-shadow: -11px -11px 25px
+rgba(255, 255, 255, 0.35), 11px 13px 25px
+rgba( 165, 181, 288, 0.738227);
+}
+.icons i:hover {
+opacity: 1;
+border-radius: 50%;
+background: #D4DBE8;
+transform: scale(1.1);
+mix-blend-mode: normal;
+box-shadow: -11px - 11px 22px
+rgba(255, 255, 255, 0.524448), 11px 13px 22px
+rgba( 166, 181, 208, 0.929496), inset -11px -11px 28px
+rgba(255, 255, 255, 0.692936), inset 11px 11px 28px
+rgba( 166, 181, 208, 0.856261);
+} */
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Newsy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li> 
+      </div>
+    </div>
+  </nav>
+<div class="text-center">
+  <p class="super mx-4">This Website will help you gain knowledge about the latest current-affairs and cope-up with the rest of the world.<br> This knowledge would be helpful in increasing your General Knowledge and would also help you in your competitive exams<br> and other competitions. The news on this website has been taken care by <a href="https:\\www.bbc.com">BBC-NEWS</a>.<br> All the rights of the news belong solely to BBC-news. I don't have any right on these news.</p>
+</div>  
+<div class="text-center">
+  <p class="super mx-4 stream">This Website is not meant to hurt the feelings of any community, religion, caste, or any of the social reforms. It has been solely created for entertainment purposes.<br> Hello Guys, I am Daman and I am the developer of this website, I hope that you might be doing good and would be healthy and fit.<br> This is my new website my other website links I will share with you in the form of a website only.... <br><a href="https://portfolio2-0-7xeu.onrender.com/">Click here to check my other websites</a></p>
+</div>
+<div class="main center">
+  <div class="box center">
+  <img src="{{ url_for('static', filename='daman.jpg') }}" alt="">
+  <div>
+  <p class="user_name">Daman Preet</p>
+  <p class="skill">Web Developer</p>
+  </div>
+  <div class="arr_container center">
+  <i class="fas fa-arrow-right"></i>
+  </div>
+  <div class="left_container off">
+  <p>Skills</p>
+  <div class="skills">
+  <div>Html</div>
+  <div>Css</div>
+      <div>Java</div>
+      <div>Android App Dev</div>
+  </div>
+  <div class="icons">
+  <a href="https://www.instagram.com/daman_p_1028/"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/daman.preetsinghtakkar/"><i class="fab fa-facebook"></i></a>
+  </div>
+  <div class="cancel center">
+  <i class="fas fa-times"></i>
+  </div>
+  </div>
+  </div>
+  </div>
+<footer class="bg-light text-center text-lg-start start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(13, 166, 226, 0.2);">
+    © This Website is managed by Daman.inc:
+    <a class="text-dark" href="/"></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script>
+  const clc = document.querySelector(".cancel");
+  const arr = document.querySelector(".arr_container");
+  const left_container = document.querySelector(".left_container");
+
+  arr.addEventListener("click", ()=>{
+    arr.classList.add("active_arr");
+    if(left_container.classList.contains("off")) {
+      left_container.classList.remove("off");
+      left_container.classList.add("active");
+  }
+});
+clc.addEventListener("click", ()=>{
+  arr.classList.remove( "active_arr");
+  if(left_container.classList.contains("active")){
+  left_container.classList.remove("active");
+  left_container.classList.add("off");
+}
+});
+
+</script>
+</html>

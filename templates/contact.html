@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daman">
+    <meta name="description" content="This is a news website it will provide you with the latest news happening in ur area.">
+    <meta name="keywords" content="news, News, Latest News, USA news">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Contact</title>
+</head>
+<style>
+  body{
+    background-color: #250048;
+    text-align: center;
+  /* background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+.circle{
+     width: 700px;
+     height: 200px;
+     background-color: blue;
+     filter: blur(60px);
+}
+.circle1{
+     width: 700px;
+     height: 200px;
+     background-color: purple;
+     filter: blur(60px);
+}
+.circle2{
+     width: 700px;
+     height: 200px;
+     background-color: yellow;
+     filter: blur(60px);
+}
+.circle3{
+     width: 700px;
+     height: 200px;
+     background-color: orange;
+     filter: blur(60px);
+}
+.step{
+  justify-content: space-around;
+  overflow: hidden;
+  filter: blur(60px);
+}
+
+.bd{
+    border: 1px solid black;
+    border-left-color: cyan;
+    border-left-width: 6px;
+  }
+  .footer{
+    margin-top: 235px;
+  }
+  .daman{
+    margin: auto;
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Newsy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact" href="/contact">Contact</a>
+          </li> 
+      </div>
+    </div>
+  </nav>
+  <main class="form-signin">
+    <form name="sentMessage" method="POST" id="contactForm">
+      {form.user}
+      <div class="input-group mb-3 w-25 text-center daman">
+        <span class="input-group-text" id="basic-addon1">Username</span>
+        <input type="text" class="form-control daman" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="user">
+      </div>
+    {form.email}
+    <div class="mb-3 w-25 form-floating text-center daman">
+      <span class="input-group-text" id="basic-addon1">Email</span>
+      <!-- <label for="exampleFormControlInput1" class="form-label">Email</label> -->
+      <input type="email" class="form-control daman" id="exampleFormControlInput1" placeholder="" name="email">
+    </div>
+    {form.password}
+    <div class="mb-3 w-25 form-floating text-center daman">
+      <!-- <label for="inputPassword" class="col-sm-2 col-form-label"></label> -->
+      <span class="input-group-text" id="basic-addon1">Password</span>
+        <input type="password" class="form-control daman" id="inputPassword" name="pass" placeholder="Password for confirmation">
+      </div>
+    {form.text}
+    <div class="mb-3 w-25 text-center daman">
+      <span class="input-group-text" id="basic-addon1">Your Feedback</span>
+      <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+      <textarea class="form-control daman" id="exampleFormControlTextarea1" rows="3" name="text" placeholder=""></textarea>
+    </div>
+    <button type="submit" class="btn btn-info my-4">Submit</button>
+    </form>
+    </main>
+<footer class="bg-light text-center text-lg-start footer">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(13, 166, 226, 0.2);">
+    © This Website is managed by Daman.inc:
+    <a class="text-dark" href="/"></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js" integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.js" integrity="sha512-S2JCciTJc71f1kRG8qFmU1jryXH/mhfYlLvn7XJEwTcD9EJQTRr6gfMtnU6L/nnaodDgbazrmhdCRwbUuiRNQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.js.map"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</html>
