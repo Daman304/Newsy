@@ -13,7 +13,10 @@ app.config.update(
     MAIL_USE_SSL = True,
     MAIL_USERNAME = os.getenv("MAIL_USERNAME"),
     MAIL_PASSWORD = os.getenv("MAIL_PASSWORD")
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd676af350e0fc2fa5660041236eee28d959aacc
 )
 mail = Mail(app)
 class Form(db.Model):
